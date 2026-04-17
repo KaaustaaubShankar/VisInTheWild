@@ -1,24 +1,37 @@
 # VisInTheWild
+
 ## Introduction
 The website we focused on was https://opengridworks.com.
-## What is the purpose of this visualization?  
-The purpose of this website is to show all the energy sources whether they are renewable or non renewable on earth in the form of points and lines on a interactive globe. It helps see how energy is produced, transmitted, and interconnected worldwide.
+
+## What is the purpose of this visualization?
+The purpose of this website is to show energy infrastructure around the world through an interactive globe. It displays power plants, renewable energy sites, transmission lines, and other connected systems using points and lines on a map. This helps users understand how energy is produced, moved, and connected across different regions.
+
 ## What is the data?  How was the data captured or collected?
-The data comes in the form of specific locations/nodes that represent powerplants, renewable sites, and energy facilities as well as line data that represents transmission lines, pipelines, and other connections. OpenGridWorks uses many sources that come from public domain, open license, and third party datasets. All datasources can be found in the following link: https://opengridworks.com/attribution. 
+The data appears as location based nodes that represent power plants, renewable sites, data centers, and other energy related facilities, along with line data that represents transmission lines, pipelines, and other infrastructure connections. OpenGridWorks states that it uses a mix of public domain, open license, and third party datasets. The full list of sources can be found here: https://opengridworks.com/attribution.
+
 ## Who are the users that this visualization was made for?
-Some of the primary users would be energy researchers, policy makers, and people in military/government. I could also see some secondary users being students likes us, journalists, and people who are curious about where the energy for our homes comes from.
+Some of the main users are likely energy researchers, policy makers, and people working in government or related sectors. It could also be useful for students, journalists, and anyone who is curious about where energy comes from and how it is distributed. Because the site includes detailed infrastructure layers and technical categories, it seems best suited for people who already have at least some interest in energy systems or mapping tools.
+
 ## Questions+Insights: What questions can people ask+answer about this data using this visualization?  How can they find the answers with this tool?Show some example insights someone can arrive at using this tool
 
-1. Where are some of the biggest solar operations in the US?
-    We can find this by filtering through solar and then look for the largest circles
+1. Where are some of the biggest solar operations in the US?  
+   A user could filter the map to show only solar related infrastructure and then look for the largest markers. This makes it easier to spot major solar clusters and compare them by location.
 
-2. Where are most datacenters in the US?
+2. Where are most datacenters in the US?  
+   A user can turn on the datacenter layer and look for areas where the white diamond markers are most concentrated. This helps identify major regional clusters of data centers.
 
-Filter to only datacenters and look for clusters of white diamonds.
+3. How close are datacenters to major grid infrastructure?  
+   By viewing datacenters together with substations and transmission lines, users can visually see whether these facilities are being built near strong existing grid connections. This can reveal how closely digital infrastructure depends on energy infrastructure.
+
+4. How does energy infrastructure density compare across regions?  
+   By zooming out and comparing different countries or parts of the world, users can notice where infrastructure appears dense and where it appears sparse. This can lead to insights about development, energy access, or possible gaps in the data itself.
 
 ## Comment on the visual and interaction design choices- are their choices effective? Are there any design choices that are not effective, and how could they be improved?
+Many of the design choices are effective. The dark background helps the infrastructure layers stand out more clearly and keeps the viewer focused on the data instead of the geography underneath. The collapsible sidebar is also useful because it gives users access to filters without constantly taking up screen space. This works well for a map that contains many overlapping layers.
 
-Their interaction design choices are effective. Going for dark mode allows for geographical features like mountains to be ignored while rivers and oceans are still acknowledged. In addition, having all the data filtering capabilities on a collapsible sidebar allow for the filters to be easily accessible when needed.
+At the same time, there are parts of the design that could be improved. When many layers are turned on, the map can become hard to interpret without a very clear legend or guidance. Also, finding specific details from individual points can take some time, especially if the hover or click behavior is not smooth. A more visible legend, stronger labeling, and easier point selection would improve the overall usability.
+
 ## What are the limitations of this design- what can't someone do with this visualization?
+One limitation is that the visualization is mainly built for visual exploration rather than detailed analysis. Since the data is shown mostly through points and lines on a map, it can take a lot of effort to find exact values or compare specific facilities. For example, if I wanted to identify the single largest datacenter, I would still need to manually inspect points even after applying filters.
 
-Some limitations is that since all of this data is being represented visually without a more digestible format like tabular, it takes a lot of effort to grab specific datapoints. For example, if i wanted to find the biggest datacenter, I would have to spend time looking through each of the points even after filtering which takes time. An alternative for this would be some sort of terminal for sql commands or potentially a tabular view. This would make filtering much easier and allow researchers to grab data more effectively.
+Another limitation is the lack of a more digestible data view. A table, searchable panel, or export feature would make it much easier to sort, compare, and retrieve information. Something like a tabular view or query based interface would be especially helpful for researchers who want to do more than just explore the map visually. Right now, the site is strong for broad patterns and spatial relationships, but weaker for quick detailed lookup.
